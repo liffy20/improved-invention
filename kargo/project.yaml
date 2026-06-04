@@ -1,10 +1,13 @@
 apiVersion: kargo.akuity.io/v1alpha1
-kind: Project
+kind: ProjectConfig
 metadata:
-  name: kargo-simple
+  name: kargo-simple       
+  namespace: kargo-simple   
 spec:
   promotionPolicies:
-  - stage: staging
-    autoPromotionEnabled: true
-  - stage: prod
-    autoPromotionEnabled: true
+    - stageSelector:
+        name: dev        
+      autoPromotionEnabled: true
+    - stageSelector:
+        name: staging
+      autoPromotionEnabled: true
