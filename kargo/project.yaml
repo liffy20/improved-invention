@@ -5,4 +5,6 @@ metadata:
 spec:
   promotionPolicies:
   - stage: staging
-    autoPromotion: true
+    autoPromotionEnabled: true
+  - stage: prod
+    autoPromotionEnabled: true
