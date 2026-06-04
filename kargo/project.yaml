@@ -8,6 +8,4 @@ spec:
     - stageSelector:
         name: dev        
       autoPromotionEnabled: true
-    - stageSelector:
-        name: staging
-      autoPromotionEnabled: true
+   
