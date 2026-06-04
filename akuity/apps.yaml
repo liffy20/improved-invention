@@ -24,7 +24,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/<repo>
+        repoURL: https://github.com/liffy20/improved-invention
         targetRevision: env/{{env}}
         path: .
       destination:
