@@ -10,6 +10,9 @@ spec:
       name: guestbook
     sources:
       direct: true
+  promotionMechanisms:
+    argoCDAppUpdates:
+    - appName: guestbook-simple-dev
   promotionTemplate:
     spec:
       vars:
@@ -71,6 +74,9 @@ spec:
     sources:
       stages:
       - dev
+  promotionMechanisms:
+    argoCDAppUpdates:
+    - appName: guestbook-simple-staging
   promotionTemplate:
     spec:
       vars:
@@ -132,6 +138,9 @@ spec:
     sources:
       stages:
       - staging
+  promotionMechanisms:
+    argoCDAppUpdates:
+    - appName: guestbook-simple-prod
   promotionTemplate:
     spec:
       vars:
